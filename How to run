@@ -8,3 +8,11 @@ cd flask-nmap-web-scanner
 
 pip install flask
 python app.py
+
+
+## Open in your browser:
+
+http://127.0.0.1:5000
+
+
+Enter a local IP (for example your router or your own machine), then run the scan.
