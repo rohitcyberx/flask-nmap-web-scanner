@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Nmap Web Scanner</title>
+</head>
+<body>
+    <h1>Nmap Web Scanner</h1>
+    <p><strong>Use this only on networks/devices you own or have permission for.</strong></p>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li><strong>{{ category|capitalize }}:</strong> {{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form method="post">
+        <label for="target">Target IP or Domain:</label><br>
+        <input type="text" id="target" name="target" placeholder="e.g. 192.168.1.1 or example.com" style="width:300px;">
+        <br><br>
+        <button type="submit">Run Scan</button>
+    </form>
+</body>
+</html>

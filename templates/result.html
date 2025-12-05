@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Scan Result - {{ target }}</title>
+</head>
+<body>
+    <h1>Scan Result for: {{ target }}</h1>
+
+    <p><a href="{{ url_for('index') }}">← Back</a></p>
+
+    {% if error %}
+        <h3>Error:</h3>
+        <pre>{{ error }}</pre>
+    {% endif %}
+
+    <h3>Output:</h3>
+    <pre>{{ output }}</pre>
+</body>
+</html>
