@@ -28,11 +28,25 @@ This is similar to a small internal tool that a cybercrime unit / SOC analyst mi
 
 ---
 
+
 ## 📂 Project structure
 
-```text
+``` text
 flask_nmap_scanner/
 ├── app.py             # Flask application
 └── templates/
     ├── index.html     # Form to enter target
     └── result.html    # Page to show Nmap output
+```
+
+## How to run
+git clone https://github.com/rohitcyberx/flask-nmap-web-scanner.git
+cd flask-nmap-web-scanner
+
+# create virtual env if you want (optional)
+# python -m venv venv
+# source venv/bin/activate   # Linux/macOS
+# venv\Scripts\activate      # Windows
+
+pip install flask
+python app.py
